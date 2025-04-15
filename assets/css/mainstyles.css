@@ -1,0 +1,219 @@
+/* Aplicar a fonte customizada */
+body, html {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+  transition: background-color 0.5s, color 0.5s;
+}
+
+body{background-color: #fff8e1;}
+
+/* Header e Navbar */
+header {
+  background: #4e342e;
+  transition: background-color 0.5s, color 0.5s;
+}
+.navbar {
+  transition: background-color 0.5s, color 0.5s;
+}
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #fff !important;
+  transition: color 0.5s;
+}
+.navbar-nav .nav-link:hover {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+/* Seção Hero */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+.hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+.hero .content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.hero .content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* Conteúdo Principal */
+main {
+  background: #fff8e1;
+  color: #3e2723;
+  transition: background-color 0.5s, color 0.5s;
+}
+.user-info {
+  text-align: center;
+  margin: 20px 0;
+}
+.about {
+  padding: 20px;
+  text-align: center;
+}
+.about h2 {
+  margin-top: 20px;
+}
+
+/* Área da Galeria */
+.gallery {
+  background: #fff8e1;
+  padding: 40px 0;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+.gallery h2 {
+  margin-bottom: 30px;
+}
+.gallery img {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: #4e342e;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+/* Botões */
+/* Botão primário customizado com animações e micro-interações */
+.btn-primary {
+  background-color: #8B4513;
+  border-color: #8B4513;
+  color: #fff;
+  opacity: 1;
+  transition: opacity 1s ease-in-out, transform 0.3s ease;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #A0522D;
+  border-color: #A0522D;
+  color: #fff;
+  transform: scale(1.05);
+}
+/* Fade in do botão animado */
+#action-button {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+#action-button.visible {
+  opacity: 1;
+}
+
+/* Botão flutuante para darkmode/whitemode */
+.mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #8B4513;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.mode-toggle:hover {
+  background-color: #A0522D;
+  transform: scale(1.1);
+}
+
+/* Botão flutuante para o Tutorial */
+.tutorial-button {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: #8B4513;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.tutorial-button:hover {
+  background-color: #A0522D;
+  transform: scale(1.1);
+}
+
+/* Animação de rotação para o ícone */
+#mode-icon {
+  display: inline-block;
+}
+.rotate {
+  animation: rotate-icon 0.6s ease-in-out;
+}
+@keyframes rotate-icon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilos para Dark Mode */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+body.dark-mode main {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+body.dark-mode .gallery {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+body.dark-mode .btn-primary {
+  background-color: #1e1e1e;
+  border-color: #1e1e1e;
+  color: #e0e0e0;
+}
+body.dark-mode .btn-primary:active {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+body.dark-mode .mode-toggle {
+  background: #572d1a;
+}
+body.dark-mode header {
+  background: #1e1e1e;
+}
+body.dark-mode footer {
+  background: #1e1e1e;
+}

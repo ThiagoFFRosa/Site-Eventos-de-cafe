@@ -1,0 +1,29 @@
+# Node
+node_modules/
+.env
+package-lock.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Uploads e arquivos gerados
+/uploads
+/public/uploads
+temp/
+*.tmp
+
+# VSCode
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Build de front (caso use futuramente)
+dist/
+build/
+
+# Outros
+*.bak
